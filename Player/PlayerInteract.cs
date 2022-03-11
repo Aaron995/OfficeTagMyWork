@@ -11,10 +11,10 @@ namespace Player
     public class PlayerInteract : MonoBehaviour
     {
         public bool EnableGizmo = true;
+        public bool PlayingInteract = false;
         public PhotonView PhotonView;
         public Vector3 InteractRange;
         public LayerMask LineOfSightLayers;        
-        public bool PlayingInteract = false;
 
         [SerializeField] private GameObject m_Model;
         [SerializeField] private Transform m_LineOfSightStart;
