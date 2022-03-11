@@ -17,11 +17,12 @@ namespace Player
         public bool PlayingInteract = false;
 
         [SerializeField] private GameObject m_Model;
+        [SerializeField] private Transform m_LineOfSightStart;
+        
         private PlayerStatus m_PlayerStatus;
         private AnimationStateController m_ASC;
         private Door m_InteractingDoor;
-
-        [SerializeField] private Transform m_LineOfSightStart;
+        
 
         void Start()
         {
