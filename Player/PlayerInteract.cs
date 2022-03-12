@@ -40,7 +40,6 @@ namespace Player
             if (context.performed && !m_PlayerStatus.Stunned && !m_PlayerStatus.Dummy && !m_PlayerStatus.Busy && !PlayingInteract)
             {
                 GameObject selectedDoor = GetDoor();
-                Debug.Log("Hit door " + selectedDoor);                
                 if (selectedDoor != null )
                 {
                     PlayingInteract = true;
