@@ -126,7 +126,7 @@ namespace Player
                     // Only check for doors
                      if (interactable.InteractableType == InteractableTypeEnum.Door)
                     {
-                        // If we don't we check for line of sight
+                        // If we have a door we check for line of sight
                         RaycastHit objectInTheWay;
 
                         Vector3 aimPoint = hit.collider.gameObject.transform.position;
